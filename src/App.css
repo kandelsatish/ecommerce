@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif; 
+}
+
+:root{
+  --mainColor:#f57224;
+  --whiteColor: #ffff;
+  --backColor: #000;
+  --lightDark: #222;
+}
+
+/* navigation style */
+
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: red;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+.left a{
+  font-weight: bold;
+  font-size: 29px;
+}
+
+li{
+  list-style: none;
+}
+
+.logo{
+  margin: 0px 10px 0px 10px;
+}
+
+.left{
+  align-items: center;
+  padding: 0px 40px;
+  display: flex;
+  width: 50%;
+  text-align: left;
+  height: 100%;
+}
+.right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 0px 40px;
+  align-items: center;
+}
+.cartCount {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 50px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+} 
+
+/* this is to give margin to left and right to any component */
+
+.mlr{
+  margin: 0px 10px 0px 10px;
+}
+
+.container{
+  padding: 0px 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+ header{
+  background: url('./assets//banner.jpg') ;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 99%;
+  margin: 84px 0px 0px 0px;
+}
+
+.headerContaint{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+.headerContaint{
+  color: white;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product .product-image img{
+  height: 200px;
+  width: 300px;
+}
+
+.product{
+  margin: 5px 5px 5px 5px ;
+  width: 24%;
+  overflow: hidden;
+}
+
+.product:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+}
+.status{
+  position: absolute;
+  padding: 5px;
+  background-color: rgb(153, 42, 42);
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+.description{
+  font-size: 15px;
+  height: 55.9px;
+  overflow: hidden;
+}
+.cart-container{
+  padding: 10px 10px 10px 50px;
+  display: flex;
+}
+.add-to-cart button{
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+.add-to-cart button:hover{
+  background-color:  rgba(207, 94, 94, 0.2);
+}
+.cart-details{
+  margin-top: 84px;
+  width: 70%;
+  display: flex;
+  color: rgb(151, 147, 147);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cart-details .empty-message p{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.cart-item{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 4px 0px;
+  justify-content: space-around;
+}
+.cart-item-image img{
+  height: 87.6px;
+  width: 87.5px;
+  border-radius: 5px;
+}
+.cart-item-name{
+  margin-left: 30px;
+  width: 158.9px;
+  font-size: 23.2px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif; 
+}
+.add-qty-remove{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  align-items: center;
+}
+.cart-summery{
+  width: 25%;
+  margin-top: 100px;
+  border-radius: 10px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.summery{
+ padding: 0px 10px;
+}
+.summery h3{
+  padding: 5px 0px;
+  border-bottom: 1px solid grey;
+}
+.font-bold{
+  font-weight: bold;
+}
+.total-item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.total-price-section{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.stripe-section{
+  margin-top: 20px;
+}
+
+
+/* media query */
+@media screen and (max-width:780px) {
+  .cart-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-item{
+    width: 100%;
+  }
+  .cart-summery{
+    width: 60%;
+    margin-top: 20px;
+  }
+  .cart-item-name{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif; 
+  }
+  .add-qty-remove{
+    margin:0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-item-delete{
+    margin-left: 40px;
+  }
+  .products{
+    justify-content: center;
+  }
+  .product{
+    width: 45%;
+  }
+    
+}
+
+
+
+
+
+
+
