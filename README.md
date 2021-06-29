@@ -4,7 +4,7 @@ This is a simple Shopping app buld with React- A Javascript liberary for buildin
 
 # Installation
   <br>
-  1. git clone [https://github.com/kandelsatish/ecommerce.git](https://github.com/kandelsatish/ecommerce.git)<br>
+  1. git clone https://github.com/kandelsatish/ecommerce.git <br>
   2.cd ecommerce<br>
   3.npm start<br>
 <br><br>
