@@ -1,6 +1,6 @@
 # Shopping
 
-This is a simple Shopping app buld with React- A Javascript liberary for building user interfaces
+This is a simple Shopping app build with React- A Javascript library for building user interfaces.
 
 # Installation
   <br>
